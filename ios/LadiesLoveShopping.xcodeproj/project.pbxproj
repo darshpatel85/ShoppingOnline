@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* LadiesLoveShoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LadiesLoveShoppingTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-LadiesLoveShopping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LadiesLoveShopping.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7699B88040F8A987B510C191 /* libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F718CFEDFAC34058B4B55E38 /* Spartan-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25C53D15596C4D389F8EA22A /* Spartan-VariableFont_wght.ttf */; };
+		87C1D529679048878A723DF7 /* Spartan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A196DB5925436E9A03358E /* Spartan.ttf */; };
+		C492721E45D34758A71CE802 /* Spartan-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2CFAA9AB71D4F688C2B1A45 /* Spartan-Black.ttf */; };
+		4386973BBD7B4AB881585EFA /* Spartan-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE773B43E54945EE941FB116 /* Spartan-Bold.ttf */; };
+		86C19C695CD441C28036D543 /* Spartan-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAB8B6659A1440C38141EEB7 /* Spartan-ExtraBold.ttf */; };
+		68B33D9BB39D4C6FA79087D8 /* Spartan-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8CA51A2AE694DC0BBA38182 /* Spartan-ExtraLight.ttf */; };
+		8BDE5593AA7B4F1C94ADBDF3 /* Spartan-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0546E5EC93BE4D82B9E2B8C0 /* Spartan-Light.ttf */; };
+		0AB711536EC749DCB28E712A /* Spartan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72EB22D74B5451C8BA1C046 /* Spartan-Medium.ttf */; };
+		9575B1D0E82B406589DF5E0C /* Spartan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A03D7C0D516945A59484F2CB /* Spartan-Regular.ttf */; };
+		7327058580A5451FBAFB3F72 /* Spartan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD7D9EA9A30A4CE0A9E13362 /* Spartan-SemiBold.ttf */; };
+		D68979F431714D36B2A35FB5 /* Spartan-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5848801606664B8F999BACA3 /* Spartan-Thin.ttf */; };
+		24BBB18F86C44B00BD3BBE1F /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BBCADD73DF24D1A8A9AB763 /* AntDesign.ttf */; };
+		D1066A25CAF64E708BB61E32 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8336DEF2FFF44F998FF716B /* Entypo.ttf */; };
+		A8274DBD1C9B48A49CE5C716 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9893F40DF24B483F9BFF28C2 /* EvilIcons.ttf */; };
+		CCE5B4E8A64A4FE9ACF8A981 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CE79D9E59014B59B9A470C9 /* Feather.ttf */; };
+		E587644426734838BFDF0BC0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D88CBCC4AC7941678AD8298B /* FontAwesome.ttf */; };
+		8C2900A4F2884BA0B70ED388 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93797C809FF8434CB3A1D9EA /* FontAwesome5_Brands.ttf */; };
+		096AA366A36D410FBEF91F32 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19EE0204BC014C2A8EFE4072 /* FontAwesome5_Regular.ttf */; };
+		6C5D9A0FB1264020A76E75D4 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E5DBB88A8FA4C6BABA306DA /* FontAwesome5_Solid.ttf */; };
+		2AB484D007764CB590BE8B51 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E769506455894972A084E154 /* Fontisto.ttf */; };
+		C419B7D91C6640CC94B7FA5B /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD44CEDED8145AC9A64D0E9 /* Foundation.ttf */; };
+		0B9EAB75EAB742A3A373C862 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0EFD54DC14846818B580A58 /* Ionicons.ttf */; };
+		9F3D295E1FBE4505BDB12B47 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA00EE80604F444F8192BAB4 /* MaterialCommunityIcons.ttf */; };
+		34D78E2F35194EAD83FD3DE7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D429BB989044BB38024B658 /* MaterialIcons.ttf */; };
+		BD60573BCB8C4A69A99C456B /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74B4543F401B4755BE43CE54 /* Octicons.ttf */; };
+		DEA5D3CB51714C6C83694113 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC92A17E56F8443D8861CC3A /* SimpleLineIcons.ttf */; };
+		E3145D9175CD4C1DB25F272C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 285D1E69C0964A6AB1C5260C /* Zocial.ttf */; };
+		F7BA4A9BAE8949939C2F0CC9 /* futur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17995018F1264011BCCDFA6F /* futur.ttf */; };
+		C06CC5A8FF9C4C34938EDB82 /* Futura Bold font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAF818F10FEC4099A083E7E2 /* Futura Bold font.ttf */; };
+		DE2D33C6D48A4E7C886D7C59 /* Futura Bold Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9338E0F4E88F4CD4AD9120AB /* Futura Bold Italic font.ttf */; };
+		B5D6ED16DAFD4805975009F5 /* Futura Book font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EFEE4663F154C06B8701425 /* Futura Book font.ttf */; };
+		D03FAF3AD15A4F8ABD4A11B0 /* Futura Book Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02548F800D564EB9BA235422 /* Futura Book Italic font.ttf */; };
+		0AC5DDFBB17C4184993A6305 /* Futura Extra Black font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0FB5AD45E02497886E20027 /* Futura Extra Black font.ttf */; };
+		53EE4D7DAC7342FDBE5024C8 /* Futura Heavy font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADCB4AD4D3F5447FB269564D /* Futura Heavy font.ttf */; };
+		1E25594C935A44ECA725A478 /* Futura Heavy Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF55432646BE4CD29F4523D1 /* Futura Heavy Italic font.ttf */; };
+		FD60FE3E7D63469599BE02D6 /* futura light bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76E60948892246AC9AB08A7B /* futura light bt.ttf */; };
+		5BF16392F5604D09A04400BE /* Futura Light font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2094C25E63C43A1845D5342 /* Futura Light font.ttf */; };
+		703FA368F7A146A297EB9443 /* Futura Light Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C0B46ECEDBC4014AF0B5B94 /* Futura Light Italic font.ttf */; };
+		054A70EB84BD4FED807AD307 /* futura medium bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC9C4BBB76654E61801B5304 /* futura medium bt.ttf */; };
+		177183A0A427453FA4EFEBBF /* futura medium condensed bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A889CB917F2C45F4AE90D5EE /* futura medium condensed bt.ttf */; };
+		AFA8375F0FB34D1BBF1BBBDD /* Futura Medium Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42757BCC2182485D8D8341B1 /* Futura Medium Italic font.ttf */; };
+		912EA4117C374104B6F7663D /* Futura XBlk BT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0EA1307978340AA9ECF6F52 /* Futura XBlk BT.ttf */; };
+		7F64E6CA7B6B4FBBA34D6DC8 /* Futura-CondensedLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 307D3193382540CA856FF189 /* Futura-CondensedLight.otf */; };
+		2E1733AECCE3421DA090AF1E /* tt0205m_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F2CA5DCF55C43BFA95E750B /* tt0205m_.ttf */; };
+		F6CE43525BFA4D17878A4531 /* unicode.futurab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 222DEB9F207744A7B5DB0E25 /* unicode.futurab.ttf */; };
+		413BD835A627485CA1B66000 /* unicode.futurabb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA87A7CD03004B4D8BBC0D0D /* unicode.futurabb.ttf */; };
+		35708C94E8BD4E1EA71A5CEE /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA563602B7A54F798B8478D5 /* FuturaPTBold.otf */; };
+		285614BD324E4187A6BE9A34 /* FuturaPTBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF9B8E61088C489B9D8CBEE2 /* FuturaPTBoldOblique.otf */; };
+		F9AFA178DBB74812AD832FAF /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5458839F8B684DCDACC5CB2E /* FuturaPTBook.otf */; };
+		4B640A9D3C424E0AADF19E2A /* FuturaPTBookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = DCAC010322CF4F27840291E8 /* FuturaPTBookOblique.otf */; };
+		22398950C3044C9C9F5B7F91 /* FuturaPTCondBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D6DA41DBD78446149461932F /* FuturaPTCondBold.otf */; };
+		15163CFC737B46C3BAA81158 /* FuturaPTCondBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4FA8FE5C39F4E3D84AD7D9A /* FuturaPTCondBoldOblique.otf */; };
+		A08E36682A034D85A6DD89EB /* FuturaPTCondBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EFF9AC760364E329227F968 /* FuturaPTCondBook.otf */; };
+		D80DECBF466649E2BFD75077 /* FuturaPTCondBookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B89EB8EEAD89478687272B13 /* FuturaPTCondBookOblique.otf */; };
+		12F8BF98D29A43CF84459798 /* FuturaPTCondExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3F4C148459943CF8527CAB6 /* FuturaPTCondExtraBold.otf */; };
+		4D71A0C366FA412E9108BE12 /* FuturaPTCondExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0847EF0530814E36B9902AB2 /* FuturaPTCondExtraBoldOblique.otf */; };
+		EABA4858585D4FC783CEA35E /* FuturaPTCondMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BE56D42ADC641D28C420C6A /* FuturaPTCondMedium.otf */; };
+		F18DE580DCD7480584FD8F93 /* FuturaPTCondMediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36A3DFB701DD4F9AAA74F220 /* FuturaPTCondMediumOblique.otf */; };
+		8E7666F68E794441ABA3C0A2 /* FuturaPTDemi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66E3F371CD604EF7AF62604E /* FuturaPTDemi.otf */; };
+		D91C9D30B9894B1DB2431ACB /* FuturaPTDemiOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B4428DBB9456885166346 /* FuturaPTDemiOblique.otf */; };
+		8716F7C5F2F04525BEE1DE74 /* FuturaPTExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F39048ABB2A245CFB229A6D0 /* FuturaPTExtraBold.otf */; };
+		01DC9B76A93040D894D592DF /* FuturaPTExtraBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC74C8904D84D40B45C2072 /* FuturaPTExtraBoldOblique.otf */; };
+		D2340630A975473893B5389A /* FuturaPTHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD5622C852244B8FA33D8F52 /* FuturaPTHeavy.otf */; };
+		B8F89A27AEC14B599E958F9F /* FuturaPTHeavyOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD65B3427B4E2B9A8B73F5 /* FuturaPTHeavyOblique.otf */; };
+		8DC72854A7BB45F6B9CC6724 /* FuturaPTLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C58B379945D14F708554CC93 /* FuturaPTLight.otf */; };
+		90135D14B22E489494684E0F /* FuturaPTLightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE610F8A17D4FBABD55DCFF /* FuturaPTLightOblique.otf */; };
+		60523C01581A46DCB8F296FE /* FuturaPTMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B89FE374131F4F23B3C59990 /* FuturaPTMedium.otf */; };
+		42DFD335649A4393A0FEB6FE /* FuturaPTMediumOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72B7A508C600491082C0BDC9 /* FuturaPTMediumOblique.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = LadiesLoveShopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* LadiesLoveShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LadiesLoveShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LadiesLoveShoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LadiesLoveShoppingTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* LadiesLoveShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LadiesLoveShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LadiesLoveShopping/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LadiesLoveShopping/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LadiesLoveShopping/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LadiesLoveShopping/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LadiesLoveShopping/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-LadiesLoveShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LadiesLoveShopping.debug.xcconfig"; path = "Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-LadiesLoveShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LadiesLoveShopping.release.xcconfig"; path = "Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LadiesLoveShopping-LadiesLoveShoppingTests.debug.xcconfig"; path = "Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-LadiesLoveShopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LadiesLoveShopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LadiesLoveShopping/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LadiesLoveShopping-LadiesLoveShoppingTests.release.xcconfig"; path = "Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		25C53D15596C4D389F8EA22A /* Spartan-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Spartan-VariableFont_wght.ttf"; path = "../assets/fonts/Spartan-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		67A196DB5925436E9A03358E /* Spartan.ttf */ = {isa = PBXFileReference; name = "Spartan.ttf"; path = "../assets/fonts/Spartan.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2CFAA9AB71D4F688C2B1A45 /* Spartan-Black.ttf */ = {isa = PBXFileReference; name = "Spartan-Black.ttf"; path = "../assets/fonts/Spartan-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE773B43E54945EE941FB116 /* Spartan-Bold.ttf */ = {isa = PBXFileReference; name = "Spartan-Bold.ttf"; path = "../assets/fonts/Spartan-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AAB8B6659A1440C38141EEB7 /* Spartan-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Spartan-ExtraBold.ttf"; path = "../assets/fonts/Spartan-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8CA51A2AE694DC0BBA38182 /* Spartan-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Spartan-ExtraLight.ttf"; path = "../assets/fonts/Spartan-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0546E5EC93BE4D82B9E2B8C0 /* Spartan-Light.ttf */ = {isa = PBXFileReference; name = "Spartan-Light.ttf"; path = "../assets/fonts/Spartan-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D72EB22D74B5451C8BA1C046 /* Spartan-Medium.ttf */ = {isa = PBXFileReference; name = "Spartan-Medium.ttf"; path = "../assets/fonts/Spartan-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A03D7C0D516945A59484F2CB /* Spartan-Regular.ttf */ = {isa = PBXFileReference; name = "Spartan-Regular.ttf"; path = "../assets/fonts/Spartan-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD7D9EA9A30A4CE0A9E13362 /* Spartan-SemiBold.ttf */ = {isa = PBXFileReference; name = "Spartan-SemiBold.ttf"; path = "../assets/fonts/Spartan-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5848801606664B8F999BACA3 /* Spartan-Thin.ttf */ = {isa = PBXFileReference; name = "Spartan-Thin.ttf"; path = "../assets/fonts/Spartan-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0BBCADD73DF24D1A8A9AB763 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8336DEF2FFF44F998FF716B /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9893F40DF24B483F9BFF28C2 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7CE79D9E59014B59B9A470C9 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D88CBCC4AC7941678AD8298B /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		93797C809FF8434CB3A1D9EA /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		19EE0204BC014C2A8EFE4072 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E5DBB88A8FA4C6BABA306DA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E769506455894972A084E154 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBD44CEDED8145AC9A64D0E9 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0EFD54DC14846818B580A58 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FA00EE80604F444F8192BAB4 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D429BB989044BB38024B658 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		74B4543F401B4755BE43CE54 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC92A17E56F8443D8861CC3A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		285D1E69C0964A6AB1C5260C /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17995018F1264011BCCDFA6F /* futur.ttf */ = {isa = PBXFileReference; name = "futur.ttf"; path = "../assets/fonts/futur.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CAF818F10FEC4099A083E7E2 /* Futura Bold font.ttf */ = {isa = PBXFileReference; name = "Futura Bold font.ttf"; path = "../assets/fonts/Futura Bold font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9338E0F4E88F4CD4AD9120AB /* Futura Bold Italic font.ttf */ = {isa = PBXFileReference; name = "Futura Bold Italic font.ttf"; path = "../assets/fonts/Futura Bold Italic font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0EFEE4663F154C06B8701425 /* Futura Book font.ttf */ = {isa = PBXFileReference; name = "Futura Book font.ttf"; path = "../assets/fonts/Futura Book font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		02548F800D564EB9BA235422 /* Futura Book Italic font.ttf */ = {isa = PBXFileReference; name = "Futura Book Italic font.ttf"; path = "../assets/fonts/Futura Book Italic font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0FB5AD45E02497886E20027 /* Futura Extra Black font.ttf */ = {isa = PBXFileReference; name = "Futura Extra Black font.ttf"; path = "../assets/fonts/Futura Extra Black font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ADCB4AD4D3F5447FB269564D /* Futura Heavy font.ttf */ = {isa = PBXFileReference; name = "Futura Heavy font.ttf"; path = "../assets/fonts/Futura Heavy font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF55432646BE4CD29F4523D1 /* Futura Heavy Italic font.ttf */ = {isa = PBXFileReference; name = "Futura Heavy Italic font.ttf"; path = "../assets/fonts/Futura Heavy Italic font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76E60948892246AC9AB08A7B /* futura light bt.ttf */ = {isa = PBXFileReference; name = "futura light bt.ttf"; path = "../assets/fonts/futura light bt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F2094C25E63C43A1845D5342 /* Futura Light font.ttf */ = {isa = PBXFileReference; name = "Futura Light font.ttf"; path = "../assets/fonts/Futura Light font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C0B46ECEDBC4014AF0B5B94 /* Futura Light Italic font.ttf */ = {isa = PBXFileReference; name = "Futura Light Italic font.ttf"; path = "../assets/fonts/Futura Light Italic font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC9C4BBB76654E61801B5304 /* futura medium bt.ttf */ = {isa = PBXFileReference; name = "futura medium bt.ttf"; path = "../assets/fonts/futura medium bt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A889CB917F2C45F4AE90D5EE /* futura medium condensed bt.ttf */ = {isa = PBXFileReference; name = "futura medium condensed bt.ttf"; path = "../assets/fonts/futura medium condensed bt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		42757BCC2182485D8D8341B1 /* Futura Medium Italic font.ttf */ = {isa = PBXFileReference; name = "Futura Medium Italic font.ttf"; path = "../assets/fonts/Futura Medium Italic font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B0EA1307978340AA9ECF6F52 /* Futura XBlk BT.ttf */ = {isa = PBXFileReference; name = "Futura XBlk BT.ttf"; path = "../assets/fonts/Futura XBlk BT.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		307D3193382540CA856FF189 /* Futura-CondensedLight.otf */ = {isa = PBXFileReference; name = "Futura-CondensedLight.otf"; path = "../assets/fonts/Futura-CondensedLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F2CA5DCF55C43BFA95E750B /* tt0205m_.ttf */ = {isa = PBXFileReference; name = "tt0205m_.ttf"; path = "../assets/fonts/tt0205m_.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		222DEB9F207744A7B5DB0E25 /* unicode.futurab.ttf */ = {isa = PBXFileReference; name = "unicode.futurab.ttf"; path = "../assets/fonts/unicode.futurab.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA87A7CD03004B4D8BBC0D0D /* unicode.futurabb.ttf */ = {isa = PBXFileReference; name = "unicode.futurabb.ttf"; path = "../assets/fonts/unicode.futurabb.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA563602B7A54F798B8478D5 /* FuturaPTBold.otf */ = {isa = PBXFileReference; name = "FuturaPTBold.otf"; path = "../assets/fonts/FuturaPTBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF9B8E61088C489B9D8CBEE2 /* FuturaPTBoldOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTBoldOblique.otf"; path = "../assets/fonts/FuturaPTBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5458839F8B684DCDACC5CB2E /* FuturaPTBook.otf */ = {isa = PBXFileReference; name = "FuturaPTBook.otf"; path = "../assets/fonts/FuturaPTBook.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCAC010322CF4F27840291E8 /* FuturaPTBookOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTBookOblique.otf"; path = "../assets/fonts/FuturaPTBookOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D6DA41DBD78446149461932F /* FuturaPTCondBold.otf */ = {isa = PBXFileReference; name = "FuturaPTCondBold.otf"; path = "../assets/fonts/FuturaPTCondBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C4FA8FE5C39F4E3D84AD7D9A /* FuturaPTCondBoldOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTCondBoldOblique.otf"; path = "../assets/fonts/FuturaPTCondBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2EFF9AC760364E329227F968 /* FuturaPTCondBook.otf */ = {isa = PBXFileReference; name = "FuturaPTCondBook.otf"; path = "../assets/fonts/FuturaPTCondBook.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B89EB8EEAD89478687272B13 /* FuturaPTCondBookOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTCondBookOblique.otf"; path = "../assets/fonts/FuturaPTCondBookOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3F4C148459943CF8527CAB6 /* FuturaPTCondExtraBold.otf */ = {isa = PBXFileReference; name = "FuturaPTCondExtraBold.otf"; path = "../assets/fonts/FuturaPTCondExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0847EF0530814E36B9902AB2 /* FuturaPTCondExtraBoldOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTCondExtraBoldOblique.otf"; path = "../assets/fonts/FuturaPTCondExtraBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BE56D42ADC641D28C420C6A /* FuturaPTCondMedium.otf */ = {isa = PBXFileReference; name = "FuturaPTCondMedium.otf"; path = "../assets/fonts/FuturaPTCondMedium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36A3DFB701DD4F9AAA74F220 /* FuturaPTCondMediumOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTCondMediumOblique.otf"; path = "../assets/fonts/FuturaPTCondMediumOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66E3F371CD604EF7AF62604E /* FuturaPTDemi.otf */ = {isa = PBXFileReference; name = "FuturaPTDemi.otf"; path = "../assets/fonts/FuturaPTDemi.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8B0B4428DBB9456885166346 /* FuturaPTDemiOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTDemiOblique.otf"; path = "../assets/fonts/FuturaPTDemiOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F39048ABB2A245CFB229A6D0 /* FuturaPTExtraBold.otf */ = {isa = PBXFileReference; name = "FuturaPTExtraBold.otf"; path = "../assets/fonts/FuturaPTExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BC74C8904D84D40B45C2072 /* FuturaPTExtraBoldOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTExtraBoldOblique.otf"; path = "../assets/fonts/FuturaPTExtraBoldOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD5622C852244B8FA33D8F52 /* FuturaPTHeavy.otf */ = {isa = PBXFileReference; name = "FuturaPTHeavy.otf"; path = "../assets/fonts/FuturaPTHeavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8EFD65B3427B4E2B9A8B73F5 /* FuturaPTHeavyOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTHeavyOblique.otf"; path = "../assets/fonts/FuturaPTHeavyOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C58B379945D14F708554CC93 /* FuturaPTLight.otf */ = {isa = PBXFileReference; name = "FuturaPTLight.otf"; path = "../assets/fonts/FuturaPTLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3DE610F8A17D4FBABD55DCFF /* FuturaPTLightOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTLightOblique.otf"; path = "../assets/fonts/FuturaPTLightOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B89FE374131F4F23B3C59990 /* FuturaPTMedium.otf */ = {isa = PBXFileReference; name = "FuturaPTMedium.otf"; path = "../assets/fonts/FuturaPTMedium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72B7A508C600491082C0BDC9 /* FuturaPTMediumOblique.otf */ = {isa = PBXFileReference; name = "FuturaPTMediumOblique.otf"; path = "../assets/fonts/FuturaPTMediumOblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-LadiesLoveShopping.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* LadiesLoveShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* LadiesLoveShoppingTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = LadiesLoveShoppingTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* LadiesLoveShopping */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = LadiesLoveShopping;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-LadiesLoveShopping.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-LadiesLoveShopping-LadiesLoveShoppingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* LadiesLoveShopping */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* LadiesLoveShoppingTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				E0FE8EEE4C5C4735874CA059 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* LadiesLoveShopping.app */,
+				00E356EE1AD99517003FC87E /* LadiesLoveShoppingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-LadiesLoveShopping.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-LadiesLoveShopping.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0FE8EEE4C5C4735874CA059 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				25C53D15596C4D389F8EA22A /* Spartan-VariableFont_wght.ttf */,
+				67A196DB5925436E9A03358E /* Spartan.ttf */,
+				D2CFAA9AB71D4F688C2B1A45 /* Spartan-Black.ttf */,
+				DE773B43E54945EE941FB116 /* Spartan-Bold.ttf */,
+				AAB8B6659A1440C38141EEB7 /* Spartan-ExtraBold.ttf */,
+				F8CA51A2AE694DC0BBA38182 /* Spartan-ExtraLight.ttf */,
+				0546E5EC93BE4D82B9E2B8C0 /* Spartan-Light.ttf */,
+				D72EB22D74B5451C8BA1C046 /* Spartan-Medium.ttf */,
+				A03D7C0D516945A59484F2CB /* Spartan-Regular.ttf */,
+				DD7D9EA9A30A4CE0A9E13362 /* Spartan-SemiBold.ttf */,
+				5848801606664B8F999BACA3 /* Spartan-Thin.ttf */,
+				0BBCADD73DF24D1A8A9AB763 /* AntDesign.ttf */,
+				B8336DEF2FFF44F998FF716B /* Entypo.ttf */,
+				9893F40DF24B483F9BFF28C2 /* EvilIcons.ttf */,
+				7CE79D9E59014B59B9A470C9 /* Feather.ttf */,
+				D88CBCC4AC7941678AD8298B /* FontAwesome.ttf */,
+				93797C809FF8434CB3A1D9EA /* FontAwesome5_Brands.ttf */,
+				19EE0204BC014C2A8EFE4072 /* FontAwesome5_Regular.ttf */,
+				3E5DBB88A8FA4C6BABA306DA /* FontAwesome5_Solid.ttf */,
+				E769506455894972A084E154 /* Fontisto.ttf */,
+				EBD44CEDED8145AC9A64D0E9 /* Foundation.ttf */,
+				E0EFD54DC14846818B580A58 /* Ionicons.ttf */,
+				FA00EE80604F444F8192BAB4 /* MaterialCommunityIcons.ttf */,
+				6D429BB989044BB38024B658 /* MaterialIcons.ttf */,
+				74B4543F401B4755BE43CE54 /* Octicons.ttf */,
+				BC92A17E56F8443D8861CC3A /* SimpleLineIcons.ttf */,
+				285D1E69C0964A6AB1C5260C /* Zocial.ttf */,
+				17995018F1264011BCCDFA6F /* futur.ttf */,
+				CAF818F10FEC4099A083E7E2 /* Futura Bold font.ttf */,
+				9338E0F4E88F4CD4AD9120AB /* Futura Bold Italic font.ttf */,
+				0EFEE4663F154C06B8701425 /* Futura Book font.ttf */,
+				02548F800D564EB9BA235422 /* Futura Book Italic font.ttf */,
+				E0FB5AD45E02497886E20027 /* Futura Extra Black font.ttf */,
+				ADCB4AD4D3F5447FB269564D /* Futura Heavy font.ttf */,
+				CF55432646BE4CD29F4523D1 /* Futura Heavy Italic font.ttf */,
+				76E60948892246AC9AB08A7B /* futura light bt.ttf */,
+				F2094C25E63C43A1845D5342 /* Futura Light font.ttf */,
+				6C0B46ECEDBC4014AF0B5B94 /* Futura Light Italic font.ttf */,
+				AC9C4BBB76654E61801B5304 /* futura medium bt.ttf */,
+				A889CB917F2C45F4AE90D5EE /* futura medium condensed bt.ttf */,
+				42757BCC2182485D8D8341B1 /* Futura Medium Italic font.ttf */,
+				B0EA1307978340AA9ECF6F52 /* Futura XBlk BT.ttf */,
+				307D3193382540CA856FF189 /* Futura-CondensedLight.otf */,
+				0F2CA5DCF55C43BFA95E750B /* tt0205m_.ttf */,
+				222DEB9F207744A7B5DB0E25 /* unicode.futurab.ttf */,
+				EA87A7CD03004B4D8BBC0D0D /* unicode.futurabb.ttf */,
+				EA563602B7A54F798B8478D5 /* FuturaPTBold.otf */,
+				CF9B8E61088C489B9D8CBEE2 /* FuturaPTBoldOblique.otf */,
+				5458839F8B684DCDACC5CB2E /* FuturaPTBook.otf */,
+				DCAC010322CF4F27840291E8 /* FuturaPTBookOblique.otf */,
+				D6DA41DBD78446149461932F /* FuturaPTCondBold.otf */,
+				C4FA8FE5C39F4E3D84AD7D9A /* FuturaPTCondBoldOblique.otf */,
+				2EFF9AC760364E329227F968 /* FuturaPTCondBook.otf */,
+				B89EB8EEAD89478687272B13 /* FuturaPTCondBookOblique.otf */,
+				F3F4C148459943CF8527CAB6 /* FuturaPTCondExtraBold.otf */,
+				0847EF0530814E36B9902AB2 /* FuturaPTCondExtraBoldOblique.otf */,
+				3BE56D42ADC641D28C420C6A /* FuturaPTCondMedium.otf */,
+				36A3DFB701DD4F9AAA74F220 /* FuturaPTCondMediumOblique.otf */,
+				66E3F371CD604EF7AF62604E /* FuturaPTDemi.otf */,
+				8B0B4428DBB9456885166346 /* FuturaPTDemiOblique.otf */,
+				F39048ABB2A245CFB229A6D0 /* FuturaPTExtraBold.otf */,
+				3BC74C8904D84D40B45C2072 /* FuturaPTExtraBoldOblique.otf */,
+				AD5622C852244B8FA33D8F52 /* FuturaPTHeavy.otf */,
+				8EFD65B3427B4E2B9A8B73F5 /* FuturaPTHeavyOblique.otf */,
+				C58B379945D14F708554CC93 /* FuturaPTLight.otf */,
+				3DE610F8A17D4FBABD55DCFF /* FuturaPTLightOblique.otf */,
+				B89FE374131F4F23B3C59990 /* FuturaPTMedium.otf */,
+				72B7A508C600491082C0BDC9 /* FuturaPTMediumOblique.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* LadiesLoveShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LadiesLoveShoppingTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = LadiesLoveShoppingTests;
+			productName = LadiesLoveShoppingTests;
+			productReference = 00E356EE1AD99517003FC87E /* LadiesLoveShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* LadiesLoveShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LadiesLoveShopping" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LadiesLoveShopping;
+			productName = LadiesLoveShopping;
+			productReference = 13B07F961A680F5B00A75B9A /* LadiesLoveShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LadiesLoveShopping" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* LadiesLoveShopping */,
+				00E356ED1AD99517003FC87E /* LadiesLoveShoppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F718CFEDFAC34058B4B55E38 /* Spartan-VariableFont_wght.ttf in Resources */,
+				87C1D529679048878A723DF7 /* Spartan.ttf in Resources */,
+				C492721E45D34758A71CE802 /* Spartan-Black.ttf in Resources */,
+				4386973BBD7B4AB881585EFA /* Spartan-Bold.ttf in Resources */,
+				86C19C695CD441C28036D543 /* Spartan-ExtraBold.ttf in Resources */,
+				68B33D9BB39D4C6FA79087D8 /* Spartan-ExtraLight.ttf in Resources */,
+				8BDE5593AA7B4F1C94ADBDF3 /* Spartan-Light.ttf in Resources */,
+				0AB711536EC749DCB28E712A /* Spartan-Medium.ttf in Resources */,
+				9575B1D0E82B406589DF5E0C /* Spartan-Regular.ttf in Resources */,
+				7327058580A5451FBAFB3F72 /* Spartan-SemiBold.ttf in Resources */,
+				D68979F431714D36B2A35FB5 /* Spartan-Thin.ttf in Resources */,
+				24BBB18F86C44B00BD3BBE1F /* AntDesign.ttf in Resources */,
+				D1066A25CAF64E708BB61E32 /* Entypo.ttf in Resources */,
+				A8274DBD1C9B48A49CE5C716 /* EvilIcons.ttf in Resources */,
+				CCE5B4E8A64A4FE9ACF8A981 /* Feather.ttf in Resources */,
+				E587644426734838BFDF0BC0 /* FontAwesome.ttf in Resources */,
+				8C2900A4F2884BA0B70ED388 /* FontAwesome5_Brands.ttf in Resources */,
+				096AA366A36D410FBEF91F32 /* FontAwesome5_Regular.ttf in Resources */,
+				6C5D9A0FB1264020A76E75D4 /* FontAwesome5_Solid.ttf in Resources */,
+				2AB484D007764CB590BE8B51 /* Fontisto.ttf in Resources */,
+				C419B7D91C6640CC94B7FA5B /* Foundation.ttf in Resources */,
+				0B9EAB75EAB742A3A373C862 /* Ionicons.ttf in Resources */,
+				9F3D295E1FBE4505BDB12B47 /* MaterialCommunityIcons.ttf in Resources */,
+				34D78E2F35194EAD83FD3DE7 /* MaterialIcons.ttf in Resources */,
+				BD60573BCB8C4A69A99C456B /* Octicons.ttf in Resources */,
+				DEA5D3CB51714C6C83694113 /* SimpleLineIcons.ttf in Resources */,
+				E3145D9175CD4C1DB25F272C /* Zocial.ttf in Resources */,
+				F7BA4A9BAE8949939C2F0CC9 /* futur.ttf in Resources */,
+				C06CC5A8FF9C4C34938EDB82 /* Futura Bold font.ttf in Resources */,
+				DE2D33C6D48A4E7C886D7C59 /* Futura Bold Italic font.ttf in Resources */,
+				B5D6ED16DAFD4805975009F5 /* Futura Book font.ttf in Resources */,
+				D03FAF3AD15A4F8ABD4A11B0 /* Futura Book Italic font.ttf in Resources */,
+				0AC5DDFBB17C4184993A6305 /* Futura Extra Black font.ttf in Resources */,
+				53EE4D7DAC7342FDBE5024C8 /* Futura Heavy font.ttf in Resources */,
+				1E25594C935A44ECA725A478 /* Futura Heavy Italic font.ttf in Resources */,
+				FD60FE3E7D63469599BE02D6 /* futura light bt.ttf in Resources */,
+				5BF16392F5604D09A04400BE /* Futura Light font.ttf in Resources */,
+				703FA368F7A146A297EB9443 /* Futura Light Italic font.ttf in Resources */,
+				054A70EB84BD4FED807AD307 /* futura medium bt.ttf in Resources */,
+				177183A0A427453FA4EFEBBF /* futura medium condensed bt.ttf in Resources */,
+				AFA8375F0FB34D1BBF1BBBDD /* Futura Medium Italic font.ttf in Resources */,
+				912EA4117C374104B6F7663D /* Futura XBlk BT.ttf in Resources */,
+				7F64E6CA7B6B4FBBA34D6DC8 /* Futura-CondensedLight.otf in Resources */,
+				2E1733AECCE3421DA090AF1E /* tt0205m_.ttf in Resources */,
+				F6CE43525BFA4D17878A4531 /* unicode.futurab.ttf in Resources */,
+				413BD835A627485CA1B66000 /* unicode.futurabb.ttf in Resources */,
+				35708C94E8BD4E1EA71A5CEE /* FuturaPTBold.otf in Resources */,
+				285614BD324E4187A6BE9A34 /* FuturaPTBoldOblique.otf in Resources */,
+				F9AFA178DBB74812AD832FAF /* FuturaPTBook.otf in Resources */,
+				4B640A9D3C424E0AADF19E2A /* FuturaPTBookOblique.otf in Resources */,
+				22398950C3044C9C9F5B7F91 /* FuturaPTCondBold.otf in Resources */,
+				15163CFC737B46C3BAA81158 /* FuturaPTCondBoldOblique.otf in Resources */,
+				A08E36682A034D85A6DD89EB /* FuturaPTCondBook.otf in Resources */,
+				D80DECBF466649E2BFD75077 /* FuturaPTCondBookOblique.otf in Resources */,
+				12F8BF98D29A43CF84459798 /* FuturaPTCondExtraBold.otf in Resources */,
+				4D71A0C366FA412E9108BE12 /* FuturaPTCondExtraBoldOblique.otf in Resources */,
+				EABA4858585D4FC783CEA35E /* FuturaPTCondMedium.otf in Resources */,
+				F18DE580DCD7480584FD8F93 /* FuturaPTCondMediumOblique.otf in Resources */,
+				8E7666F68E794441ABA3C0A2 /* FuturaPTDemi.otf in Resources */,
+				D91C9D30B9894B1DB2431ACB /* FuturaPTDemiOblique.otf in Resources */,
+				8716F7C5F2F04525BEE1DE74 /* FuturaPTExtraBold.otf in Resources */,
+				01DC9B76A93040D894D592DF /* FuturaPTExtraBoldOblique.otf in Resources */,
+				D2340630A975473893B5389A /* FuturaPTHeavy.otf in Resources */,
+				B8F89A27AEC14B599E958F9F /* FuturaPTHeavyOblique.otf in Resources */,
+				8DC72854A7BB45F6B9CC6724 /* FuturaPTLight.otf in Resources */,
+				90135D14B22E489494684E0F /* FuturaPTLightOblique.otf in Resources */,
+				60523C01581A46DCB8F296FE /* FuturaPTMedium.otf in Resources */,
+				42DFD335649A4393A0FEB6FE /* FuturaPTMediumOblique.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LadiesLoveShopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping/Pods-LadiesLoveShopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LadiesLoveShopping-LadiesLoveShoppingTests/Pods-LadiesLoveShopping-LadiesLoveShoppingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* LadiesLoveShoppingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* LadiesLoveShopping */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LadiesLoveShoppingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LadiesLoveShopping.app/LadiesLoveShopping";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-LadiesLoveShopping-LadiesLoveShoppingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = LadiesLoveShoppingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LadiesLoveShopping.app/LadiesLoveShopping";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-LadiesLoveShopping.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LadiesLoveShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = LadiesLoveShopping;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-LadiesLoveShopping.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = LadiesLoveShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = LadiesLoveShopping;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LadiesLoveShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LadiesLoveShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LadiesLoveShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>LLS</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Spartan-VariableFont_wght.ttf</string>
+		<string>Spartan.ttf</string>
+		<string>Spartan-Black.ttf</string>
+		<string>Spartan-Bold.ttf</string>
+		<string>Spartan-ExtraBold.ttf</string>
+		<string>Spartan-ExtraLight.ttf</string>
+		<string>Spartan-Light.ttf</string>
+		<string>Spartan-Medium.ttf</string>
+		<string>Spartan-Regular.ttf</string>
+		<string>Spartan-SemiBold.ttf</string>
+		<string>Spartan-Thin.ttf</string>
+		<string>AntDesign.ttf</string>
+		<string>Entypo.ttf</string>
+		<string>EvilIcons.ttf</string>
+		<string>Feather.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Fontisto.ttf</string>
+		<string>Foundation.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
+		<string>Zocial.ttf</string>
+		<string>futur.ttf</string>
+		<string>Futura Bold font.ttf</string>
+		<string>Futura Bold Italic font.ttf</string>
+		<string>Futura Book font.ttf</string>
+		<string>Futura Book Italic font.ttf</string>
+		<string>Futura Extra Black font.ttf</string>
+		<string>Futura Heavy font.ttf</string>
+		<string>Futura Heavy Italic font.ttf</string>
+		<string>futura light bt.ttf</string>
+		<string>Futura Light font.ttf</string>
+		<string>Futura Light Italic font.ttf</string>
+		<string>futura medium bt.ttf</string>
+		<string>futura medium condensed bt.ttf</string>
+		<string>Futura Medium Italic font.ttf</string>
+		<string>Futura XBlk BT.ttf</string>
+		<string>Futura-CondensedLight.otf</string>
+		<string>tt0205m_.ttf</string>
+		<string>unicode.futurab.ttf</string>
+		<string>unicode.futurabb.ttf</string>
+		<string>FuturaPTBold.otf</string>
+		<string>FuturaPTBoldOblique.otf</string>
+		<string>FuturaPTBook.otf</string>
+		<string>FuturaPTBookOblique.otf</string>
+		<string>FuturaPTCondBold.otf</string>
+		<string>FuturaPTCondBoldOblique.otf</string>
+		<string>FuturaPTCondBook.otf</string>
+		<string>FuturaPTCondBookOblique.otf</string>
+		<string>FuturaPTCondExtraBold.otf</string>
+		<string>FuturaPTCondExtraBoldOblique.otf</string>
+		<string>FuturaPTCondMedium.otf</string>
+		<string>FuturaPTCondMediumOblique.otf</string>
+		<string>FuturaPTDemi.otf</string>
+		<string>FuturaPTDemiOblique.otf</string>
+		<string>FuturaPTExtraBold.otf</string>
+		<string>FuturaPTExtraBoldOblique.otf</string>
+		<string>FuturaPTHeavy.otf</string>
+		<string>FuturaPTHeavyOblique.otf</string>
+		<string>FuturaPTLight.otf</string>
+		<string>FuturaPTLightOblique.otf</string>
+		<string>FuturaPTMedium.otf</string>
+		<string>FuturaPTMediumOblique.otf</string>
+	</array>
+</dict>
+</plist>
