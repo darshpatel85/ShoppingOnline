@@ -13,6 +13,7 @@ const customTextProps = {
 const customTextInputProps = {
   style: {
     fontFamily: 'FuturaPTMedium',
+    fontSize: 18,
     paddingLeft: 10,
   },
 };

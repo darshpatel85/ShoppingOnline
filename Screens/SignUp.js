@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import {
   View,
   Text,
@@ -12,8 +12,26 @@ import {
 import {Dropdown} from 'react-native-element-dropdown';
 import Checkbox from 'react-native-check-box';
 import ImageButton from '../Components/ImageButton';
+import {AuthContext} from '../App';
 
 const SignUp = ({navigation}) => {
+  const {signup} = useContext(AuthContext);
+  const [data, setData] = useState({
+    title: '',
+    fname: '',
+    lname: '',
+    password: '',
+    email: '',
+    cpassword: '',
+  });
+
+  const [title, settitle] = useState('');
+  const [fname, setfname] = useState('');
+  const [lname, setlname] = useState('');
+  const [password, setpassword] = useState('');
+  const [email, setemail] = useState('');
+  const [cpassword, setcpassword] = useState('');
+
   return (
     <SafeAreaView
       style={{
@@ -78,18 +96,18 @@ const SignUp = ({navigation}) => {
                   data={[
                     {
                       label: 'Mr',
-                      value: 'mr',
+                      value: 'Mr',
                     },
                     {
                       label: 'Ms',
-                      value: 'ms',
+                      value: 'Ms',
                     },
                   ]}
-                  value="mr"
                   labelField="label"
                   valueField="value"
                   maxHeight={125}
-                  onChange={() => {}}
+                  onChange={settitle}
+                  value={title}
                   selectedTextStyle={{color: '#231224'}}
                   style={{
                     ...styles.input,
@@ -101,8 +119,8 @@ const SignUp = ({navigation}) => {
 
                 <TextInput
                   style={{...styles.input, flex: 0.75}}
-                  //   onChangeText={onChangeNumber}
-                  //   value={number}
+                  onChangeText={setfname}
+                  value={fname}
                 />
               </View>
             </View>
@@ -119,8 +137,8 @@ const SignUp = ({navigation}) => {
               </Text>
               <TextInput
                 style={styles.input}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setlname}
+                value={lname}
               />
             </View>
             <View
@@ -136,8 +154,8 @@ const SignUp = ({navigation}) => {
               </Text>
               <TextInput
                 style={styles.input}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setemail}
+                value={email}
               />
             </View>
             <View
@@ -153,8 +171,8 @@ const SignUp = ({navigation}) => {
               </Text>
               <TextInput
                 style={{...styles.input}}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setpassword}
+                value={password}
               />
               <Text
                 style={{
@@ -179,8 +197,8 @@ const SignUp = ({navigation}) => {
               </Text>
               <TextInput
                 style={{...styles.input}}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setcpassword}
+                value={cpassword}
               />
             </View>
             <View
@@ -220,7 +238,12 @@ const SignUp = ({navigation}) => {
               </Text>
             </View>
             <View style={{marginVertical: 30}}>
-              <ImageButton title="SIGN UP" />
+              <ImageButton
+                title="SIGN UP"
+                onPress={() => {
+                  signup({title,fname,lname,email,password,cpassword});
+                }}
+              />
             </View>
           </View>
         </View>

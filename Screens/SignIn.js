@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -14,6 +14,9 @@ import ImageButton from '../Components/ImageButton';
 
 const SignIn = ({navigation}) => {
   const {signIn} = React.useContext(AuthContext);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <SafeAreaView
       style={{
@@ -70,8 +73,8 @@ const SignIn = ({navigation}) => {
               </Text>
               <TextInput
                 style={styles.input}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setEmail}
+                value={email}
               />
             </View>
             <View
@@ -88,13 +91,19 @@ const SignIn = ({navigation}) => {
               </Text>
               <TextInput
                 style={{...styles.input}}
-                //   onChangeText={onChangeNumber}
-                //   value={number}
+                onChangeText={setPassword}
+                value={password}
+                secureTextEntry
+                autoComplete="password"
               />
             </View>
             <View style={{marginVertical: 40}}>
               <ImageButton
-                onPress={() => signIn({username: '', password: ''})}
+                onPress={() => {
+                  if (email && password) {
+                    signIn({email, password});
+                  }
+                }}
                 title="SIGN IN"
               />
             </View>

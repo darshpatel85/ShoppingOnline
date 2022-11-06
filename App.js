@@ -1,7 +1,8 @@
 import 'react-native-reanimated';
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import {View, Text, Image, SecureStore} from 'react-native';
+import {View, Text, Image} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createDrawerNavigator, useDrawerStatus} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 import ProductDetails from './Screens/ProductDetails';
@@ -21,6 +22,7 @@ const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
 export const AuthContext = React.createContext();
 import {navigationRef} from './RootNavigation';
+import {login, register} from './api';
 function SplashScreen() {
   return (
     <View>
@@ -158,11 +160,10 @@ export default function App() {
 
       try {
         // Restore token stored in `SecureStore` or any other encrypted storage
-        userToken = await SecureStore.getItemAsync('userToken');
+        userToken = await AsyncStorage.getItem('userToken');
       } catch (e) {
         // Restoring token failed
       }
-
       // After restoring token, we may need to validate it in production apps
 
       // This will switch to the App screen or Auth screen and this loading
@@ -181,16 +182,37 @@ export default function App() {
         // After getting token, we need to persist the token using `SecureStore` or any other encrypted storage
         // In the example, we'll use a dummy token
 
-        dispatch({type: 'SIGN_IN', token: 'dummy-auth-token'});
+        await login(data.email, data.password)
+          .then(response => response.json())
+          .then(async result => {
+            if (result.success) {
+              await AsyncStorage.setItem('userToken', 'userLoggedIn');
+              dispatch({type: 'SIGN_IN', token: 'userLoggedIn'});
+            }
+          })
+          .catch(error => console.log('error', error));
       },
-      signOut: () => dispatch({type: 'SIGN_OUT'}),
+      signOut: async () => {
+        await AsyncStorage.removeItem('userToken');
+        dispatch({type: 'SIGN_OUT'});
+      },
       signUp: async data => {
         // In a production app, we need to send user data to server and get a token
         // We will also need to handle errors if sign up failed
         // After getting token, we need to persist the token using `SecureStore` or any other encrypted storage
         // In the example, we'll use a dummy token
+        
 
-        dispatch({type: 'SIGN_IN', token: 'dummy-auth-token'});
+        
+
+        await register(data)
+          .then(response => response.json())
+          .then(result => {
+            if (result.status === 201) {
+              dispatch({type: 'SIGN_IN', token: 'userLoggedIn'});
+            }
+          })
+          .catch(error => console.log('error', error));
       },
     }),
     [],
@@ -200,38 +222,38 @@ export default function App() {
       <NavigationContainer ref={navigationRef}>
         {state.isLoading || state.userToken == null ? (
           <Stack.Navigator>
-            {state.isLoading ? (
+            {/* {state.isLoading ? (
               // We haven't finished checking for the token yet
               <Stack.Screen name="Splash" component={SplashScreen} />
             ) : (
-              // No token found, user isn't signed in
-              <>
-                <Stack.Screen
-                  name="SignIn"
-                  options={{
-                    headerShown: false,
-                    animationTypeForReplace: state.isSignout ? 'pop' : 'push',
-                  }}
-                  component={SignIn}
-                />
-                <Stack.Screen
-                  name="SignUp"
-                  options={{
-                    headerShown: false,
-                    animationTypeForReplace: state.isSignout ? 'pop' : 'push',
-                  }}
-                  component={SignUp}
-                />
-                <Stack.Screen
-                  name="ForgotPassword"
-                  options={{
-                    headerShown: false,
-                    animationTypeForReplace: state.isSignout ? 'pop' : 'push',
-                  }}
-                  component={ForgotPassword}
-                />
-              </>
-            )}
+              // No token found, user isn't signed in */}
+            <>
+              <Stack.Screen
+                name="SignIn"
+                options={{
+                  headerShown: false,
+                  animationTypeForReplace: state.isSignout ? 'pop' : 'push',
+                }}
+                component={SignIn}
+              />
+              <Stack.Screen
+                name="SignUp"
+                options={{
+                  headerShown: false,
+                  animationTypeForReplace: state.isSignout ? 'pop' : 'push',
+                }}
+                component={SignUp}
+              />
+              <Stack.Screen
+                name="ForgotPassword"
+                options={{
+                  headerShown: false,
+                  animationTypeForReplace: state.isSignout ? 'pop' : 'push',
+                }}
+                component={ForgotPassword}
+              />
+            </>
+            {/* )} */}
           </Stack.Navigator>
         ) : (
           <AuthenticatedRoutes />
